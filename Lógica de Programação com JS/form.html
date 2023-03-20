@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+<head>
+	<title>Formulário em JavaScript</title>
+</head>
+<body>
+	<!-- O formulário começa aqui -->
+	<form>
+		<!-- O label serve para identificar o campo para usuários de leitores de tela -->
+		<label for="nome">Nome:</label>
+		<!-- O input permite que o usuário insira texto, no caso, o seu nome -->
+		<input type="text" id="nome" name="nome"><br>
+
+		<label for="email">Email:</label>
+		<!-- O tipo "email" do input restringe a entrada de texto para um formato de e-mail válido -->
+		<input type="email" id="email" name="email"><br>
+
+		<label for="senha">Senha:</label>
+		<!-- O tipo "password" do input oculta o texto digitado pelo usuário -->
+		<input type="password" id="senha" name="senha"><br>
+
+		<!-- O botão de envio permite que o usuário envie o formulário -->
+		<button type="submit">Enviar</button>
+	</form>
+
+	<!-- Adicionando o código JavaScript diretamente no arquivo HTML -->
+	<script>
+		// Obtendo referências aos elementos do formulário
+		const form = document.querySelector('form');
+		const nome = document.getElementById('nome');
+		const email = document.getElementById('email');
+		const senha = document.getElementById('senha');
+
+		// Função para lidar com o envio do formulário
+		function handleFormSubmit(event) {
+			// Impede que a página seja recarregada ao enviar o formulário
+			event.preventDefault();
+
+			// Obtendo os valores dos campos do formulário
+			const nomeValor = nome.value;
+			const emailValor = email.value;
+			const senhaValor = senha.value;
+
+			// Verificando se os campos estão preenchidos
+			if (nomeValor === '' || emailValor === '' || senhaValor === '') {
+				// Se algum campo estiver vazio, exibe uma mensagem de alerta
+				alert('Por favor, preencha todos os campos.');
+			} else {
+				// Se todos os campos estiverem preenchidos, exibe uma mensagem de sucesso
+				alert('O formulário foi enviado com sucesso!');
+			}
+		}
+
+		// Adicionando um listener de evento ao formulário
+		form.addEventListener('submit', handleFormSubmit);
+	</script>
+</body>
+</html>
