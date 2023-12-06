@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de administração</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Painel de administração</h1>
+    <button id="logout-button">Sair</button>
+
+    <!-- Tabela de relatórios -->
+    <h2>Relatórios</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Email</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="report-table-body">
+            <!-- Os dados serão preenchidos dinâmicamente pelo JavaScript -->
+        </tbody>
+    </table>
+    <!--Formulário para adicionar/editar relatórios-->
+    <form id="report-form">
+        <input type="hidden" id="report-id" name="report-id">
+        <label for="report-name">Nome:</label>
+        <input type="text" id="report-name" name="report-name" required><br>
+
+        <label for="report-email">Email:</label>
+        <input type="email" id="report-email" name="report-email" required><br>
+
+        <button type="submit">Salvar</button>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

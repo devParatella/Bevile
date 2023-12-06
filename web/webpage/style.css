@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+nav {
+  display: flex;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #cbcecf;
+  color: rgb(0, 0, 0);
+}
+
+.logo {
+    max-width: 220px;
+    min-width: 80px;
+    object-position: left;
+}
+
+.logo-ani {
+    max-width: 220px;
+    min-width: 80px;
+    object-position: center;
+}
+
+.sub-bar {
+    display: flex;
+}
+
+.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.barra-info p {
+  margin: 0;
+  background-color: #e7e8e9;
+}
+
+.barra-info {
+  width: 100%;
+  height: 50px;
+  background-color: #ffffff; /* Cor de destaque do Windows 11 */
+  padding: 0px;
+  text-align: right;
+}
+
+.barra_dispo {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000407;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  z-index: 1000; /* Defina um valor alto para z-index, se necessário */
+}
+
+#adults,
+#children,
+#idades {
+  min-width: 5px;
+  max-width: 25px;
+}

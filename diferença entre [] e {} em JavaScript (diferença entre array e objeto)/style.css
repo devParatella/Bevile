@@ -1,0 +1,20 @@
+#cep {
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  #logradouro,#numero, #bairro, #cidade, #estado{
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px auto;
+  }
+  
+  #logradouro {
+    width: 350px;
+  }
+
+  #numero {
+    width: 50px;
+  }

@@ -1,0 +1,132 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333333;
+}
+
+.semana {
+    display: flex;
+    justify-content: space-between;
+    background-color: #0078d4;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+.dia {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.tarefas {
+    margin-top: 20px;
+}
+
+.tarefa {
+    background-color: #e6f7ff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tarefa button {
+    background-color: #d93c3c;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.tarefa button:hover {
+    background-color: #b92c28;
+}
+
+.adicionar-tarefa {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.adicionar-tarefa label {
+    margin-right: 10px;
+    color: #333333;
+}
+
+.adicionar-tarefa input,
+.adicionar-tarefa select,
+.adicionar-tarefa button {
+    padding: 8px;
+    border: 1px solid #c4c4c4;
+    border-radius: 4px;
+}
+
+.adicionar-tarefa button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.adicionar-tarefa button:hover {
+    background-color: #005a9e;
+}
+
+.visualizar-planner {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.visualizar-planner button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.visualizar-planner button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para o formulário de edição de tarefa */
+.edicao-tarefa {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.edicao-tarefa input {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.edicao-tarefa button {
+    background-color: #0078d4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.edicao-tarefa button:hover {
+    background-color: #005a9e;
+}

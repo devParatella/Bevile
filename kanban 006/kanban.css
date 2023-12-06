@@ -1,0 +1,88 @@
+.kanban-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px auto;
+  max-width: 1000px;
+}
+
+.kanban-list {
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  flex: 1;
+  margin: 0 10px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.kanban-list h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 0;
+  text-align: center;
+}
+
+.kanban-item {
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.kanban-item-header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.kanban-item-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.kanban-item-details {
+  font-size: 0.9rem;
+}
+
+.delete-item-button,
+.duplicate-item-button {
+  background-color: transparent;
+  border: none;
+  color: #888;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 5px;
+}
+
+.add-item-button {
+  background-color: #eee;
+  border-radius: 5px;
+  color: #aaa;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 10px;
+  text-align: center;
+}
+
+.add-item-button:hover {
+  background-color: #ddd;
+  color: #777;
+}
+
+.kanban-item.selected {
+  border: 2px solid blue;
+}
+
+.kanban-item-placeholder {
+  background-color: rgba(0, 0, 255, 0.2);
+  height: 80px;
+  margin-bottom: 10px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.kanban-item-placeholder.dragging {
+  opacity: 0.5;
+}

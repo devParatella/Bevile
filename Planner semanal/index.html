@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <!-- Definindo a codificação do documento e a viewport para responsividade -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Conectando o arquivo de estilo externo -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Título da página -->
+    <title>Planner Semanal</title>
+  </head>
+
+  <body>
+    <!-- Cabeçalho do WebApp Planner -->
+    <header>
+      <div class="header-container">
+        <!-- Título principal -->
+        <span class="titulo">Planner Semanal</span>
+        <!-- Informações do usuário -->
+        <span class="info">
+          <span class="user-info">Usuário: Marcos Paratella Júnior </span>
+          <span class="mes-info">Mês: Novembro</span>
+          <span class="ano-info">Ano: 2023</span>
+        </span>
+      </div>
+    </header>
+
+    <!-- Conteúdo principal -->
+    <main>
+      <!-- Grade Semanal -->
+      <div class="weekly-planner" id="weekly-planner">
+        <!-- Dias da semana -->
+        <div class="weekdays">
+          <div class="day">
+            <h4>
+              Segunda 20
+              <button id="btn-edit-day">Edit</button>
+              <button id="btn-delete-day">Del</button>
+              <button id="btn-undo-day">Undo</button>
+            </h4>
+            <div class="tasks">
+              <div class="task">
+                <span class="task-time">01></span>
+                <span class="task-timelock">05:00 - 05:15:</span
+                ><span class="task-description"
+                  >Despertar e cuidar da higiene pessoal.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">02></span>
+                <span class="task-timelock">05:15 - 05:30:</span
+                ><span class="task-description"
+                  >Aquecimento e alongamento.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">03></span>
+                <span class="task-timelock">05:30 - 05:50:</span
+                ><span class="task-description">Passeio com os Pets.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">04></span>
+                <span class="task-timelock">05:50 - 06:00:</span
+                ><span class="task-description">Café!</span>
+              </div>
+              <div class="task">
+                <span class="task-time">05></span>
+                <span class="task-timelock">06:00 - 06:30:</span
+                ><span class="task-description"
+                  >Atualizar BackLog e Kanban pessoal.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">06></span>
+                <span class="task-timelock">06:30 - 07:30:</span
+                ><span class="task-description">Atenção a família.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">07></span>
+                <span class="task-timelock">07:30 - 09:30:</span
+                ><span class="task-description"
+                  >Quatro ciclos Pomodoro alvo: três de estudos de metodologias
+                  ágeis e um de exercícios.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">08></span>
+                <span class="task-timelock">09:30 - 10:30:</span
+                ><span class="task-description"
+                  >Exercícios físicos e leitura Filosofia.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">09></span>
+                <span class="task-timelock">10:30 - 12:30:</span
+                ><span class="task-description"
+                  >Quatro ciclos de Pomodoro, HTML, CSS, JAVASCRIPT e Design
+                  patterns respectivamente.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">10></span>
+                <span class="task-timelock">12:30 - 13:30:</span
+                ><span class="task-description">Almoço.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">11></span>
+                <span class="task-timelock">13:30 - 15:30:</span
+                ><span class="task-description">Violino.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">12></span>
+                <span class="task-timelock">15:30 - 16:30:</span
+                ><span class="task-description">Marcenaria.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">13></span>
+                <span class="task-timelock">16:30 - 17:30:</span
+                ><span class="task-description">Detran.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">14></span>
+                <span class="task-timelock">17:30 - 18:30:</span
+                ><span class="task-description">Atenção a família.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">15></span>
+                <span class="task-timelock">18:30 - 22:30:</span
+                ><span class="task-description">RPV Fullstack.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">16></span>
+                <span class="task-timelock">22:30 -></span
+                ><span class="task-description"
+                  >Iniciar processo de desligamento.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="day">
+            <h4>
+              Terça 21
+              <button id="btn-edit-day">Edit</button>
+              <button id="btn-delete-day">Del</button>
+              <button id="btn-undo-day">Undo</button>
+            </h4>
+            <div class="tasks">
+              <div class="task">
+                <span class="task-time">01></span>
+                <span class="task-timelock">05:00 - 05:15:</span
+                ><span class="task-description"
+                  >Despertar e Higiene Pessoal.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">02></span>
+                <span class="task-timelock">05:15 - 05:30:</span
+                ><span class="task-description"
+                  >Aquecimento e alongamento.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">03></span>
+                <span class="task-timelock">05:30 - 05:50:</span
+                ><span class="task-description">Passeio com os Pets.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">04></span>
+                <span class="task-timelock">05:50 - 06:00:</span
+                ><span class="task-description">Café!</span>
+              </div>
+              <div class="task">
+                <span class="task-time">05></span>
+                <span class="task-timelock">06:00 - 06:30:</span
+                ><span class="task-description"
+                  >Atualizar BackLog e Kanban pessoal.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">06></span>
+                <span class="task-timelock">06:30 - 07:30:</span
+                ><span class="task-description"
+                  >(música) Atenção a família.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">07></span>
+                <span class="task-timelock">07:30 - 09:30:</span
+                ><span class="task-description"
+                  >Quatro ciclos Pomodoro alvo: três de estudos de metodologias
+                  ágeis e um de exercícios.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">08></span>
+                <span class="task-timelock">09:30 - 10:30:</span
+                ><span class="task-description"
+                  >Exercícios físicos e leitura Filosofia.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">09></span>
+                <span class="task-timelock">10:30 - 12:30:</span
+                ><span class="task-description"
+                  >Quatro ciclos de Pomodoro, HTML, CSS, JAVASCRIPT e Design
+                  patterns respectivamente.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">10></span>
+                <span class="task-timelock">12:30 - 13:30:</span
+                ><span class="task-description">Almoço.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">11></span>
+                <span class="task-timelock">13:30 - 15:30:</span
+                ><span class="task-description">Violino.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">12></span>
+                <span class="task-timelock">15:30 - 17:30:</span
+                ><span class="task-description"
+                  >Atendimento externo de Manutenção.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">13></span>
+                <span class="task-timelock">17:30 - 18:30:</span
+                ><span class="task-description"
+                  >Relaxamento, alongamento e Música.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">14></span>
+                <span class="task-timelock">18:30 - 22:30:</span
+                ><span class="task-description">RPV Fullstack.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">15></span>
+                <span class="task-timelock">22:30 -></span
+                ><span class="task-description"
+                  >Iniciar processo de desligamento.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="day">
+            <h4>
+              Quarta 22
+              <button id="btn-edit-day">Edit</button>
+              <button id="btn-delete-day">Del</button>
+              <button id="btn-undo-day">Undo</button>
+            </h4>
+            <div class="tasks">
+              <div class="task">
+                <span class="task-time">01></span>
+                <span class="task-timelock">05:00 - 05:15:</span
+                ><span class="task-description"
+                  >Despertar e Higiene Pessoal.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">02></span>
+                <span class="task-timelock">05:15 - 05:30:</span
+                ><span class="task-description"
+                  >Aquecimento e alongamento.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">03></span>
+                <span class="task-timelock">05:30 - 05:45:</span
+                ><span class="task-description">Passeio com os Pets.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">04></span>
+                <span class="task-timelock">05:50 - 06:00:</span
+                ><span class="task-description"
+                  >Deslocamento para o Bevile Hotel.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">05></span>
+                <span class="task-timelock">06:00 - 06:30:</span
+                ><span class="task-description"
+                  >Criar BackLog e Kanban diário profissional CLT.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">06></span>
+                <span class="task-timelock">07:00 - 07:15:</span
+                ><span class="task-description">Café.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">07></span>
+                <span class="task-timelock">07:15 - 11:30:</span
+                ><span class="task-description"
+                  >Atendimento telefónico, encerramento de contas, realização de
+                  reservas, responder chat e emails.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">08></span>
+                <span class="task-timelock">11:30 - 11:50:</span
+                ><span class="task-description">Almoço.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">09></span>
+                <span class="task-timelock">11:50 - 12:00:</span
+                ><span class="task-description"
+                  >Exercícios para membros superiores leitura de
+                  atualidades.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">10></span>
+                <span class="task-timelock">12:00 - 13:30:</span
+                ><span class="task-description"
+                  >Atender demandas restantes da manhã.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">11></span>
+                <span class="task-timelock">13:30 - 17:30:</span
+                ><span class="task-description">Repete item 07.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">12></span>
+                <span class="task-timelock">17:30 - 18:00:</span
+                ><span class="task-description"
+                  >Fechamento de caixa e BackLog para o próximo turno.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">13></span>
+                <span class="task-timelock">18:00 - 18:30:</span
+                ><span class="task-description"
+                  >Deslocamento para casa, higiene Alongamento.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">14></span>
+                <span class="task-timelock">18:30 - 22:30:</span
+                ><span class="task-description">RPV Fullstack.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">15></span>
+                <span class="task-timelock">22:30 -></span
+                ><span class="task-description"
+                  >Iniciar processo de desligamento.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="day">
+            <h4>
+              Quinta 23
+              <button id="btn-edit-day">Edit</button>
+              <button id="btn-delete-day">Del</button>
+              <button id="btn-undo-day">Undo</button>
+            </h4>
+            <div class="tasks">
+              <div class="task">
+                <span class="task-time">01></span>
+                <span class="task-timelock">05:00 - 05:15:</span
+                ><span class="task-description"
+                  >Despertar e Higiene Pessoal.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">02></span>
+                <span class="task-timelock">05:15 - 05:30:</span
+                ><span class="task-description"
+                  >Aquecimento e alongamento.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">03></span>
+                <span class="task-timelock">05:30 - 05:50:</span
+                ><span class="task-description">Passeio com os Pets.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">04></span>
+                <span class="task-timelock">05:50 - 06:00:</span
+                ><span class="task-description">Café!</span>
+              </div>
+              <div class="task">
+                <span class="task-time">05></span>
+                <span class="task-timelock">06:00 - 06:30:</span
+                ><span class="task-description"
+                  >Atualizar BackLog e Kanban pessoal.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">06></span>
+                <span class="task-timelock">06:30 - 07:30:</span
+                ><span class="task-description">Atenção a família.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">07></span>
+                <span class="task-timelock">07:30 - 09:30:</span
+                ><span class="task-description"
+                  >Quatro ciclos Pomodoro alvo: três de estudos de metodologias
+                  ágeis e um de exercícios.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">08></span>
+                <span class="task-timelock">09:30 - 10:30:</span
+                ><span class="task-description"
+                  >Exercícios físicos e leitura Ficção.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">09></span>
+                <span class="task-timelock">10:30 - 12:30:</span
+                ><span class="task-description"
+                  >Quatro ciclos de Pomodoro, HTML, CSS, JAVASCRIPT, POO e
+                  Design patterns respectivamente.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">10></span>
+                <span class="task-timelock">12:30 - 13:30:</span
+                ><span class="task-description">Almoço.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">11></span>
+                <span class="task-timelock">13:30 - 15:30:</span
+                ><span class="task-description">Violino.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">12></span>
+                <span class="task-timelock">15:30 - 17:30:</span
+                ><span class="task-description"
+                  >Atendimento externo de Manutenção.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">13></span>
+                <span class="task-timelock">17:30 - 18:30:</span
+                ><span class="task-description"
+                  >Relaxamento, alongamento e Música.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">14></span>
+                <span class="task-timelock">18:30 - 22:30:</span
+                ><span class="task-description">RPV Fullstack.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">15></span>
+                <span class="task-timelock">22:30 -></span
+                ><span class="task-description"
+                  >Iniciar processo de desligamento.</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="day">
+            <h4>
+              Sexta 24
+              <button id="btn-edit-day">Edit</button>
+              <button id="btn-delete-day">Del</button>
+              <button id="btn-undo-day">Undo</button>
+            </h4>
+            <div class="tasks">
+              <div class="task">
+                <span class="task-time">01></span>
+                <span class="task-timelock">05:00 - 05:15:</span
+                ><span class="task-description"
+                  >Despertar e Higiene Pessoal.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">02></span>
+                <span class="task-timelock">05:15 - 05:30:</span
+                ><span class="task-description"
+                  >Aquecimento e alongamento.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">03></span>
+                <span class="task-timelock">05:30 - 05:45:</span
+                ><span class="task-description">Passeio com os Pets.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">04></span>
+                <span class="task-timelock">05:50 - 06:00:</span
+                ><span class="task-description"
+                  >Deslocamento para o Bevile Hotel.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">05></span>
+                <span class="task-timelock">06:00 - 06:30:</span
+                ><span class="task-description"
+                  >Criar BackLog e Kanban diário profissional CLT.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">06></span>
+                <span class="task-timelock">07:00 - 07:15:</span
+                ><span class="task-description">Café.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">07></span>
+                <span class="task-timelock">07:15 - 11:30:</span
+                ><span class="task-description"
+                  >Atendimento telefónico, encerramento de contas, realização de
+                  reservas, responder chat e emails.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">08></span>
+                <span class="task-timelock">11:30 - 11:50:</span
+                ><span class="task-description">Almoço.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">09></span>
+                <span class="task-timelock">11:50 - 12:00:</span
+                ><span class="task-description"
+                  >Exercícios para membros superiores leitura de
+                  atualidades.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">10></span>
+                <span class="task-timelock">12:00 - 13:30:</span
+                ><span class="task-description"
+                  >Atender demandas restantes da manhã.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">11></span>
+                <span class="task-timelock">13:30 - 17:30:</span
+                ><span class="task-description">Repete item 07.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">12></span>
+                <span class="task-timelock">17:30 - 18:00:</span
+                ><span class="task-description"
+                  >Fechamento de caixa e BackLog para o próximo turno.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">13></span>
+                <span class="task-timelock">18:00 - 18:30:</span
+                ><span class="task-description"
+                  >Deslocamento para casa, higiene Alongamento.</span
+                >
+              </div>
+              <div class="task">
+                <span class="task-time">14></span>
+                <span class="task-timelock">18:30 - 22:30:</span
+                ><span class="task-description">RPV Fullstack.</span>
+              </div>
+              <div class="task">
+                <span class="task-time">15></span>
+                <span class="task-timelock">22:30 -></span
+                ><span class="task-description"
+                  >Iniciar processo de desligamento.</span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fim de semana -->
+        <div class="weekend">
+          <div class="weekendday">
+            <h4>
+              Sábado 25
+              <button id="btn-edit-day">Edit</button>
+              <button id="btn-delete-day">Del</button>
+              <button id="btn-undo-day">Undo</button>
+            </h4>
+            <div class="task">
+              <span class="task-time">01></span>
+              <span class="task-timelock">05:00 - 05:15:</span
+              ><span class="task-description"
+                >Despertar e Higiene Pessoal.</span
+              >
+            </div>
+            <div class="task">
+              <span class="task-time">02></span>
+              <span class="task-timelock">05:15 - 05:30:</span
+              ><span class="task-description">Aquecimento e alongamento.</span>
+            </div>
+            <div class="task">
+              <span class="task-time">03></span>
+              <span class="task-timelock">05:30 - 05:45:</span
+              ><span class="task-description">Passeio com os Pets.</span>
+            </div>
+            <div class="task">
+              <span class="task-time">04></span>
+              <span class="task-timelock">05:50 - 06:00:</span
+              ><span class="task-description"
+                >Deslocamento para o Bevile Hotel.</span
+              >
+            </div>
+            <div class="task">
+              <span class="task-time">05></span>
+              <span class="task-timelock">06:00 - 06:30:</span
+              ><span class="task-description"
+                >Criar BackLog e Kanban diário profissional CLT.</span
+              >
+            </div>
+            <div class="task">
+              <span class="task-time">06></span>
+              <span class="task-timelock">07:00 - 07:15:</span
+              ><span class="task-description">Café.</span>
+            </div>
+            <div class="task">
+              <span class="task-time">07></span>
+              <span class="task-timelock">07:15 - 11:30:</span
+              ><span class="task-description"
+                >Atendimento telefónico, encerramento de contas, realização de
+                reservas, responder chat e emails.</span
+              >
+            </div>
+          </div>
+          <div class="weekendday">
+            <h4>
+              Domingo 26
+              <button id="btn-edit-day">Edit</button>
+              <button id="btn-delete-day">Del</button>
+              <button id="btn-undo-day">Undo</button>
+            </h4>
+            <div class="task">
+              <span class="task-time">01></span>
+              <span class="task-timelock">05:00 - 05:15:</span
+              ><span class="task-description"
+                >Despertar e Higiene Pessoal.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+      <div class="footer-container">
+        <!-- Seção de elementos importantes -->
+        <div class="important-section">
+          <h2>Importantes</h2>
+          <!-- Adicione elementos importantes aqui se necessário -->
+          <div class="task">
+            <span class="task-time">01></span>
+            <span class="task-timelock">16:30 - 17:30:</span
+            ><span class="task-description">Detran.</span>
+            <button id="btn-edit-day">Edit</button>
+            <button id="btn-delete-day">Del</button>
+            <button id="btn-undo-day">Undo</button>
+          </div>
+        </div>
+        <!-- Seção de prioridades -->
+        <div class="important-section">
+                <h2>Prioridades</h2>
+                <!-- Adicione elementos importantes aqui se necessário -->
+                <div class="task">
+                  <span class="task-time">01></span>
+                  <span class="task-timelock">16:30 - 17:30:</span
+                  ><span class="task-description">Detran.</span>
+                  <button id="btn-edit-day">Edit</button>
+                  <button id="btn-delete-day">Del</button>
+                  <button id="btn-undo-day">Undo</button>
+                </div>
+              </div>
+      </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>

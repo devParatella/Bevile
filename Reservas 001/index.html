@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sistema de Reserva de Quartos</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Sistema de Reserva de Quartos</h1>
+    </header>
+    <main>
+      <section id="search-section">
+        <h2>Pesquisar Quartos Disponíveis</h2>
+        <form id="search-form">
+          <label for="checkin-date">Data de Check-in:</label>
+          <input type="date" id="checkin-date" name="checkin-date" required>
+          <label for="checkout-date">Data de Check-out:</label>
+          <input type="date" id="checkout-date" name="checkout-date" required>
+          <label for="num-people">Número de Pessoas:</label>
+          <input type="number" id="num-people" name="num-people" required>
+          <button type="submit">Pesquisar</button>
+        </form>
+        <div id="search-results"></div>
+      </section>
+      <section id="reservation-section">
+        <h2>Fazer Reserva</h2>
+        <form id="reservation-form">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" name="name" required>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="phone">Telefone:</label>
+          <input type="tel" id="phone" name="phone" required>
+          <label for="room">Quarto:</label>
+          <select id="room" name="room" required>
+            <option value="" disabled selected>Selecione um quarto</option>
+            <!-- Aqui serão populados as opções de quartos disponíveis -->
+          </select>
+          <label for="checkin-date">Data de Check-in:</label>
+          <input type="date" id="checkin-date" name="checkin-date" required>
+          <label for="checkout-date">Data de Check-out:</label>
+          <input type="date" id="checkout-date" name="checkout-date" required>
+          <label for="num-people">Número de Pessoas:</label>
+          <input type="number" id="num-people" name="num-people" required>
+          <button type="submit">Fazer Reserva</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Sistema de Reserva de Quartos</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

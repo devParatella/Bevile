@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Seu Hotel de Luxo à Beira-Mar" />
+    <meta
+      name="keywords"
+      content="hotel, luxo, beira-mar, acomodações, eventos"
+    />
+    <title>Seu Hotel de Luxo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="barra-tarefas">
+        <button class="botao-menu">Iniciar</button>
+        <!-- Redes Sociais -->
+        <nav class="redes-sociais">
+          <a class="rede-social" href="https://www.whatsapp.com" target="_blank"
+            >WhatsApp</a
+          >
+          <a class="rede-social" href="https://www.facebook.com" target="_blank"
+            >Facebook</a
+          >
+          <a
+            class="rede-social"
+            href="https://www.instagram.com"
+            target="_blank"
+            >Instagram</a
+          >
+          <a
+            class="rede-social"
+            href="https://www.seusite.com/chat"
+            target="_blank"
+            >Chat</a
+          >
+          <!-- Outros ícones da barra de tarefas aqui -->
+        </nav>
+      </div>
+      <h1>Seu Hotel de Luxo</h1>
+    </header>
+
+    <div class="janela">
+      <h1></h1>
+      <p>Conteúdo da janela aqui.</p>
+    </div>
+
+    <div class="janela">
+      <h1>Minha janela inspirada no Windows 11</h1>
+      <p>Conteúdo da janela aqui.</p>
+    </div>
+
+    <nav id="menu">
+      <ul>
+        <li><a href="#inicio">Início</a></li>
+        <li class="dropdown">
+          <a href="#acomodacoes">Acomodações</a>
+          <div class="dropdown-content">
+            <a href="#acomodacoes/luxo">Acomodações de Luxo</a>
+            <a href="#acomodacoes/executivo">Acomodações Executivas</a>
+            <a href="#acomodacoes/familiar">Acomodações Familiares</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#eventos">Eventos</a>
+          <div class="dropdown-content">
+            <a href="#eventos/luxo">Eventos</a>
+            <a href="#eventos/executivo">Acomodações Executivas</a>
+            <a href="#eventos/familiar">Acomodações Familiares</a>
+          </div>
+        </li>
+        <li class="dropdown">
+          <a href="#galeria">Galeria</a>
+          <div class="dropdown-content">
+            <a href="#eventos/luxo">Eventos</a>
+            <a href="#eventos/executivo">Acomodações Executivas</a>
+            <a href="#eventos/familiar">Acomodações Familiares</a>
+          </div>
+        </li>
+        <li><a href="#contato">Contato</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+
+    <section id="barra_dispo">
+      <form id="reservation-form">
+        <label for="checkin">Check-in:</label>
+        <input type="date" id="checkin" required />
+
+        <label for="checkout">Check-out:</label>
+        <input type="date" id="checkout" required />
+
+        <label for="adults">Número de Adultos:</label>
+        <input type="number" id="adults" required min="1" max="3" />
+
+        <label for="children">Número de Crianças:</label>
+        <input type="number" id="children" min="0" max="2" />
+
+        <button type="submit">Verificar</button>
+      </form>
+    </section>
+
+    <section id="inicio">
+      <h1>Bem-vindo ao Nosso Hotel de Luxo</h1>
+      <p>Desfrute de uma estadia inesquecível à beira-mar.</p>
+    </section>
+
+    <section id="acomodacoes">
+      <h2>Nossas Acomodações</h2>
+      <p>
+        Aqui, você encontrará descrições detalhadas das nossas acomodações de
+        luxo.
+      </p>
+    </section>
+
+    <section id="eventos">
+      <h2>Próximos Eventos</h2>
+      <p>
+        Descubra os eventos emocionantes que organizamos para os nossos
+        hóspedes.
+      </p>
+    </section>
+
+    <section id="galeria">
+      <h2>Galeria de Fotos</h2>
+      <div class="image-gallery">
+        <div class="image-gallery-item" data-image-url="imagem1.jpg">
+          <img src="imagem1-thumb.jpg" alt="Foto 1" />
+        </div>
+        <div class="image-gallery-item" data-image-url="imagem2.jpg">
+          <img src="imagem2-thumb.jpg" alt="Foto 2" />
+        </div>
+        <!-- Adicione mais imagens e miniaturas aqui -->
+      </div>
+    </section>
+
+    <section id="sobre">
+      <h2>Sobre Nós</h2>
+      <p>Conheça a história do nosso hotel e nossa equipe dedicada.</p>
+    </section>
+
+    <table id="room-table">
+      <thead>
+        <tr>
+          <th>Foto</th>
+          <th>Descrição</th>
+        </tr>
+      </thead>
+      <tbody id="room-list">
+        <!-- Preencha a tabela com informações sobre as acomodações dinamicamente usando JavaScript -->
+      </tbody>
+    </table>
+
+    <footer>
+      <p>&copy; 2023 Seu Hotel de Luxo. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

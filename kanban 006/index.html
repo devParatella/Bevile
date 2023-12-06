@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Kanban</title>
+    <link rel="stylesheet" href="kanban.css">
+</head>
+
+<body>
+    <div class="kanban-container">
+      <ul class="kanban-list" id="to-do">
+        <h2>A fazer</h2>
+        <li class="kanban-item" draggable="true">
+          <div class="kanban-item-header">
+            <span class="kanban-item-title"></span>
+            <button class="delete-item-button" title="Excluir tarefa">X</button>
+            <button class="duplicate-item-button" title="Duplicar tarefa">D</button>
+          </div>
+          <div class="kanban-item-details">
+            <span class="kanban-item-description"></span>
+            <span class="kanban-item-sector"></span>
+          </div>
+        </li>
+        <li class="add-item-button">+ Adicionar tarefa</li>
+      </ul>
+      <ul class="kanban-list" id="doing">
+        <h2>Em execução</h2>
+        <li class="kanban-item" draggable="true">
+          <div class="kanban-item-header">
+            <span class="kanban-item-title"></span>
+            <button class="delete-item-button" title="Excluir tarefa">X</button>
+            <button class="duplicate-item-button" title="Duplicar tarefa">D</button>
+          </div>
+          <div class="kanban-item-details">
+            <span class="kanban-item-description"></span>
+            <span class="kanban-item-sector"></span>
+          </div>
+        </li>
+        <li class="add-item-button">+ Adicionar tarefa</li>
+      </ul>
+      <ul class="kanban-list" id="done">
+        <h2>Concluído</h2>
+        <li class="kanban-item" draggable="true">
+          <div class="kanban-item-header">
+            <span class="kanban-item-title"></span>
+            <button class="delete-item-button" title="Excluir tarefa">X</button>
+            <button class="duplicate-item-button" title="Duplicar tarefa">D</button>
+          </div>
+          <div class="kanban-item-details">
+            <span class="kanban-item-description"></span>
+            <span class="kanban-item-sector"></span>
+          </div>
+        </li>
+        <li class="add-item-button">+ Adicionar tarefa</li>
+      </ul>
+    </div>
+    <script src="js/kanban.js"></script>
+</body>
+</html>

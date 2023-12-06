@@ -1,0 +1,300 @@
+/* Reset CSS para garantir uma base consistente */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos gerais do documento */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  /* Define a fonte principal */
+  background-color: #f0f0f0;
+  /* Define a cor de fundo */
+  color: #333;
+  /* Define a cor do texto */
+  margin: 0;
+  /* Zera as margens do corpo */
+}
+
+/* Estilos para o cabeçalho */
+header {
+  position: relative;
+  /* Remove a posição fixa do cabeçalho */
+  background-color: #ffffff;
+  /* Cor de fundo do cabeçalho */
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  /* Adiciona uma leve sombra */
+  padding: 0px;
+  margin: 0px;
+  /* Ajusta a margem para evitar sobreposição */
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: 33% 75%;
+}
+
+.titulo {
+  font-size: xx-large;
+  font-weight: bolder;
+}
+/* Estilos para informações do usuário no cabeçalho */
+.info {
+  font-size: x-large;
+  font-weight: bolder;
+}
+
+.user-info {
+  object-position: center;
+  padding: vw;
+}
+
+.mes-info {
+  padding: 10vw;
+}
+
+.ano-info {
+  padding: 0vw;
+}
+
+/* Estilos para o conteúdo principal */
+main {
+  margin-top: 0px;
+  /* Leva em consideração a altura do menu e do cabeçalho */
+}
+
+/* Estilos para a grade semanal */
+.weekly-planner {
+  margin: 8px;
+  display: grid;
+  grid-template-columns:  repeat(6, 5    fr);
+  /* Exibe os elementos em uma grade */
+  /*grid-template-columns: repeat(7, 1fr);*/
+  /* Define 7 colunas iguais */
+  gap: 8px;
+  /* Espaçamento entre os elementos da grade */
+}
+
+.weekdays {
+  gap: 8px;
+  display: flex;
+  /* Exibe os dias da semana e do final de semana em linha */
+}
+
+.info {
+  position: static;
+  /* Remove a posição fixa do cabeçalho */
+  background-color: #ffffff;
+  /* Cor de fundo do cabeçalho */
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+  /* Adiciona uma leve sombra */
+  padding: 0px;
+  margin: 0px;
+  /* Ajusta a margem para evitar sobreposiçao*/
+}
+
+.mes-info {
+  margin: 0px;
+}
+
+.weekdays .day {
+  flex: 1;
+  /* Cresce igualmente dentro do contêiner flexível */
+  min-height: 70vh;
+  /* Altura mínima do dia */
+  max-height: 1600vh;
+  /* Altura máxima do dia */
+  min-width: 16vw;
+  /* Largura mínima do dia */
+  padding: 10px;
+  /* Espaçamento interno do dia */
+  background-color: #e5eee4;
+  /* Cor de fundo padrão */
+  border: 2px solid #0078d4;
+  /* Borda sólida com cor específica */
+  border-radius: 8px;
+  /* Borda arredondada */
+  box-shadow: 0 0 10px rgba(0, 120, 212, 0.5);
+  /* Sombra */
+}
+
+.weekend {
+  display: flexbox;
+  /* Cresce igualmente dentro do contêiner flexível */
+  min-height: 35vh;
+  /* Altura mínima do dia */
+  max-height: 150vh;
+  /* Altura máxima do dia */
+  min-width: 16vw;
+  /* Largura mínima do dia */
+  padding: 0px;
+  /* Espaçamento interno do dia */
+  border: 2px solid #0078d4;
+  /* Borda sólida com cor específica */
+  border-radius: 8px;
+  /* Borda arredondada */
+  box-shadow: 0 0 10px rgba(0, 120, 212, 0.5);
+  /* Sombra */
+  background-color: #f8f0e4;
+  /* Cor de fundo específica para o final de semana */
+}
+
+.weekendday {
+  display: grid;
+  /* Cresce igualmente dentro do contêiner flexível */
+  min-height: 35vh;
+  /* Altura mínima do dia */
+  max-height: 75vh;
+  /* Altura máxima do dia */
+  min-width: 16vw;
+  /* Largura mínima do dia */
+  padding: 2px;
+  /* Espaçamento interno do dia */
+  border: 2px solid #0078d4;
+  /* Borda sólida com cor específica */
+  border-radius: 8px;
+  /* Borda arredondada */
+  box-shadow: 0 0 10px rgba(0, 120, 212, 0.5);
+  /* Sombra */
+  background-color: #f8f0e4;
+  /* Cor de fundo específica para o final de semana */
+}
+
+.tasks {
+  list-style-type: none;
+  padding: 0;
+}
+
+.task {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.task-time {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.task-description {
+  margin-left: 5px;
+}
+
+.task-timelock {
+  color: #4caf50;
+  font-weight: bold;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* Estilos para botões CRUD */
+.discipline-buttons {
+  margin-top: 20px;
+  /* Espaço superior entre os botões e outros elementos */
+}
+
+button {
+  padding: 10px;
+  /* Espaçamento interno do botão */
+  margin-right: 10px;
+  /* Espaço à direita entre os botões */
+  background-color: #4caf50;
+  /* Cor de fundo do botão */
+  color: white;
+  /* Cor do texto do botão */
+  border: none;
+  /* Remove a borda do botão */
+  border-radius: 5px;
+  /* Borda arredondada */
+  cursor: pointer;
+  /* Altera o cursor ao pairar sobre o botão */
+}
+
+#btn-edit-day {
+  padding: 1px;
+  margin-left: 0;
+  background-color: #616cd4;
+  /* Cor de fundo do botão */
+}
+
+#btn-delete-day {
+  padding: 1.6px;
+  margin: 0px;
+  border-radius: 1px;
+  background-color: red;
+}
+
+#btn-undo-day {
+  padding: 1px;
+}
+
+/* Estilos para o rodapé */
+footer {
+  width: 100%;
+  /* Largura total do rodapé */
+  max-width: 1800px;
+  /* Largura máxima do conteúdo do rodapé */
+  margin: 0;
+  /* Centraliza o conteúdo do rodapé */
+  padding: 8px;
+  /* Espaçamento interno do rodapé */
+}
+
+.footer-container {
+  display: grid;
+  /* Exibe os elementos em uma grade */
+  grid-template-columns: 33.33% 66.66%;
+  /* Define 2 colunas 1/3 e 2/3 */
+  gap: 8px;
+  /* Espaçamento entre os elementos da grade */
+}
+
+/* Estilos para seções importantes e de prioridades no rodapé */
+.important-section {
+  display: grid;
+  /* Cresce igualmente dentro do contêiner flexível */
+  min-height: 25vh;
+  /* Altura mínima do dia */
+  max-height: 5vh;
+  /* Altura máxima do dia */
+  min-width: 16vw;
+  /* Largura mínima do dia */
+  padding: 2px;
+  /* Espaçamento interno do dia */
+  border: 2px solid #0078d4;
+  /* Borda sólida com cor específica */
+  border-radius: 8px;
+  /* Borda arredondada */
+  box-shadow: 0 0 10px rgba(0, 120, 212, 0.5);
+  /* Sombra */
+  background-color: #f8f0e4;
+  /* Cor de fundo específica para o final de semana */
+}
+.priorities-section {
+  display: grid;
+  /* Cresce igualmente dentro do contêiner flexível */
+  min-height: 25vh;
+  /* Altura mínima do dia */
+  max-height: 55vh;
+  /* Altura máxima do dia */
+  min-width: 16vw;
+  /* Largura mínima do dia */
+  padding: 2px;
+  /* Espaçamento interno do dia */
+  border: 2px solid #0078d4;
+  /* Borda sólida com cor específica */
+  border-radius: 8px;
+  /* Borda arredondada */
+  box-shadow: 0 0 10px rgba(0, 120, 212, 0.5);
+  /* Sombra */
+  background-color: #f8f0e4;
+  /* Cor de fundo específica para o final de semana */
+}
+
+/* Estilos específicos do Windows 11 Light Blue para a barra de rolagem */
+body {
+  scrollbar-color: #2078db #cbd6eb;
+  /* Cor da barra de rolagem e cor do fundo */
+  scrollbar-width: thin;
+  /* Espessura da barra de rolagem */
+}

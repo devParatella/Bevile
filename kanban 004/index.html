@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadro Kanban</title>
+    <link rel="stylesheet" href="kanban.css">
+</head>
+<body>
+    <div class="kanban-board">
+        <div class="kanban-column">
+            <h2>A fazer</h2>
+            <ul id="todo" class="kanban-list"></ul>
+            <form>
+                <input type="text" id="new-todo" placeholder="Adicionar nova tarefa">
+                <button type="submit" id="add-todo">Adicionar</button>
+            </form>
+        </div>
+        <div class="kanban-column">
+            <h2>Em progresso</h2>
+            <ul id="in-progress" class="kanban-list"></ul>
+        </div>
+        <div class="kanban-column">
+            <h2>Concluído</h2>
+            <ul id="done" class="kanban-list"></ul>
+        </div>
+    </div>
+    <script src="js/kanban.js"></script>
+</body>
+</html>

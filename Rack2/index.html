@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Rack de Hospedagem do Hotel</title>
+    <style>
+        /* CSS para o rack de hospedagem */
+        #rack {
+            display: grid;
+            grid-template-columns: repeat(10, 1fr);
+            grid-template-rows: repeat(7, 1fr);
+            grid-gap: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        /* CSS para os botões de suíte */
+        button.suite {
+            position: relative;
+            width: 140px;
+            height: 90px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            color: white;
+        }
+
+        /* CSS para o número da suíte */
+        button.suite span {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+        }
+
+        /* CSS para as suítes livres */
+        button.suite.livre {
+            background-color: green;
+        }
+
+        /* CSS para as suítes ocupadas */
+        button.suite.ocupada {
+            background-color: red;
+        }
+
+        /* CSS para as suítes em manutenção */
+        button.suite.manutencao {
+            background-color: yellow;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Rack de Hospedagem -->
+    <div id="rack">
+        <!-- Loop para criar os botões das suítes -->
+        <script>
+            // Função para abrir o cadastro do hóspede
+            function abrirCadastro() {
+                alert("Cadastro do hóspede aberto.");
+            }
+            // Cria os botões das suítes dinamicamente
+            for (let i = 1; i <= 67; i++) {
+                const botao = document.createElement('button');
+                botao.classList.add('suite');
+                botao.classList.add('livre');
+                botao.innerHTML = '<button onclick="abrirCadastro()">Entrada</button><span>' + i + '</span>';
+                document.getElementById('rack').appendChild(botao);
+            }
+        </script>
+    </div>
+
+    <!-- Script para alterar o estado das suítes -->
+    <script>
+        // Seleciona todos os botões de suíte
+        const botoesSuite = document.querySelectorAll('.suite');
+
+        // Loop para adicionar um ouvinte de evento a cada botão
+        botoesSuite.forEach(function (botao) {
+            botao.addEventListener('click', function () {
+                // Altera o estado do botão quando ele é clicado
+                if (botao.classList.contains('livre')) {
+                    botao.classList.remove('livre');
+                    botao.classList.add('ocupada');
+                } else if (botao.classList.contains('ocupada')) {
+                    botao.classList.remove('ocupada');
+                    botao.classList.add('manutencao');
+                } else {
+                    botao.classList.remove('manutencao');
+                    botao.classList.add('livre');
+                }
+            });
+
+            // Altera a cor do texto dentro do botão se ele estiver em manutenção
+            if (botao.classList.contains('manutencao')) {
+                botao.style.color = 'black';
+            }
+        });
+    </script>
+</body>
+
+</html>

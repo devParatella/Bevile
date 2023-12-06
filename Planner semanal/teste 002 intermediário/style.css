@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.planner-container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.weekdays {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.day {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+}
+
+.tasks {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.task {
+    width: calc(100% / 7);
+    min-height: 50px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.add-task {
+    margin-top: 20px;
+}
+
+input[type="text"] {
+    padding: 8px;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

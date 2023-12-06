@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Planner Semanal</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Planner Semanal</h1>
+        <div class="semana" id="semana">
+            <!-- Dias da semana serão inseridos dinamicamente com JavaScript -->
+        </div>
+        <div class="tarefas" id="tarefas-container">
+            <!-- Tarefas serão inseridas dinamicamente com JavaScript -->
+        </div>
+        <div class="adicionar-tarefa">
+            <label for="dia">Dia:</label>
+            <select id="dia">
+                <!-- Opções de dias da semana serão inseridas dinamicamente com JavaScript -->
+            </select>
+            <label for="tarefa">Tarefa:</label>
+            <input type="text" id="tarefa" placeholder="Digite sua tarefa">
+            <button onclick="adicionarTarefa()">Adicionar Tarefa</button>
+        </div>
+        <div class="visualizar-planner">
+            <button onclick="visualizarPlanner()">Visualizar Planner Semanal</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
